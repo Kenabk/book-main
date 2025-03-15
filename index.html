@@ -1,109 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Books Store</title>
-  <link rel="stylesheet" href="books.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kena | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #868686, #3a3a3a);
+    color: #fff;
+    text-align: center;
+    padding-top: 60px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 15px 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00aaff;
+}
+
+section {
+    padding: 50px 20px;
+}
+button {
+    background: #ffcc00;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+#home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#animated-text {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#about {
+    background: #222;
+    padding: 80px 40px;
+    border-radius: 10px;
+    margin: 30px auto;
+    width: 80%;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#contact {
+    padding: 40px;
+}
+
+#contact img {
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#contact img:hover {
+    transform: scale(1.1);
+}
+
+    </style>
 </head>
 <body>
-  <header class="header">
-    <div class="head-line"><p>BOOKS</p></div>
-    <div class="small-pic"><img src="img/Group 26086594.png" alt="" class="profile-pic"></div>
-  </header>
-  <div class="display">  
-  <section class="main">
-    <div class="room">
-      <a href="books-det.html"><img src="img/Group 26086594.png" class="pic"></a>
-      
-      <p class="book-title">L레이블라우스</p>
-      <div class="section">
-      <p class="percent">10%</p>
-      <p class="cost">57,600 <span>원</span></p>
-      </div>
-    </div>
-  </section>
-  <section class="main">
-    <div class="room">
-      <a href="books-det.html"><img src="img/Group 26086594.png" class="pic"></a>
-      <p class="book-title">L레이블라우스</p>
-      <div class="section">
-      <p class="percent">10%</p>
-      <p class="cost">57,600 <span>원</span></p>
-      </div>
-    </div>
-  </section>
-  <section class="main">
-    <div class="room">
-      <a href="books-det.html"><img src="img/Group 26086594.png" class="pic"></a>
-      <p class="book-title">L레이블라우스</p>
-      <div class="section">
-      <p class="percent">10%</p>
-      <p class="cost">57,600 <span>원</span></p>
-      </div>
-    </div>
-  </section>
-  <section class="main">
-    <div class="room">
-      <a href="books-det.html"><img src="img/Group 26086594.png" class="pic"></a>
-      <p class="book-title">L레이블라우스</p>
-      <div class="section">
-      <p class="percent">10%</p>
-      <p class="cost">57,600 <span>원</span></p>
-      </div>
-    </div>
-  </section>
-  <section class="main">
-    <div class="room">
-      <a href="books-det.html"><img src="img/Group 26086594.png" class="pic"></a>
-      <p class="book-title">L레이블라우스</p>
-      <div class="section">
-      <p class="percent">10%</p>
-      <p class="cost">57,600 <span>원</span></p>
-      </div>
-    </div>
-  </section>
-  <section class="main">
-    <div class="room">
-      <a href="books-det.html"><img src="img/Group 26086594.png" class="pic"></a>
-      <p class="book-title">L레이블라우스</p>
-      <div class="section">
-      <p class="percent">10%</p>
-      <p class="cost">57,600 <span>원</span></p>
-      </div>
-    </div>
-  </section>
-  <section class="main">
-    <div class="room">
-      <a href="books-det.html"><img src="img/Group 26086594.png" class="pic"></a>
-      <p class="book-title">L레이블라우스</p>
-      <div class="section">
-      <p class="percent">10%</p>
-      <p class="cost">57,600 <span>원</span></p>
-      </div>
-    </div>
-  </section>
-  <section class="main">
-    <div class="room">
-      <a href="books-det.html"><img src="img/Group 26086594.png" class="pic"></a>
-      <p class="book-title">L레이블라우스</p>
-      <div class="section">
-      <p class="percent">10%</p>
-      <p class="cost">57,600 <span>원</span></p>
-      </div>
-    </div>
-  </section>
-  <section class="main">
-    <div class="room">
-      <a href="books-det.html"><img src="img/Group 26086594.png" class="pic"></a>
-      <p class="book-title">L레이블라우스</p>
-      <div class="section">
-      <p class="percent">10%</p>
-      <p class="cost">57,600 <span>원</span></p>
-      </div>
-    </div>
-  </section>
-  </div>
-  
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <section id="home">
+        <h1 id="animated-text">I'm Kena</h1>
+        <p>Welcome to my personal portfolio. I'm a passionate developer who loves creating modern and clean websites.</p>
+        <button onclick="alert('Thanks for visiting!')">Say Hi</button>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm Kena, a dedicated developer with a deep interest in web technologies. I specialize in crafting sleek and user-friendly websites.</p>
+        <p>When I'm not coding, you might find me exploring new tech trends, playing games, or just vibing to good music.</p>
+        <p>I believe that simplicity is key in design. A well-crafted website should not only look good but also be intuitive and efficient. Whether it's frontend or backend development, I always strive for clean code and smooth user experiences.</p>
+        <p>I'm constantly learning and improving my skills. The tech world moves fast, and I love keeping up with new frameworks, design trends, and coding techniques to stay ahead of the game.</p>
+    </section>
+
+    <div style="height: 100px;"></div>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <a href="https://www.instagram.com/1justvibez1/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30">
+        </a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube" width="100">
+        </a>
+    </section>
+
+    <div style="height: 100px;"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let text = document.getElementById("animated-text");
+            text.style.opacity = 0;
+            setTimeout(() => {
+                text.style.transition = "opacity 2s ease-in-out";
+                text.style.opacity = 1;
+            }, 500);
+        });
+
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                document.getElementById(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
